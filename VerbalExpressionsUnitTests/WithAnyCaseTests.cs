@@ -40,5 +40,16 @@ namespace VerbalExpressionsUnitTests
             var isMatch = verbEx.IsMatch("wWw");
             Assert.IsFalse(isMatch, "Should not match any case");
         }
+
+        [Test]
+        public void WithAnyCase_AddwwwWithAnyCaseFalse_MatchwWw()
+        {
+            var verbEx = VerbalExpressions.DefaultExpression;
+            verbEx.Add("www")
+                .WithAnyCase(true);
+
+            var isMatch = verbEx.IsMatch("wWw");
+            Assert.IsTrue(isMatch, "Should match any case");
+        }
     }
 }
