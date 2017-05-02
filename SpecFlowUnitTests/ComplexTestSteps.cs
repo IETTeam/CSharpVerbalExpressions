@@ -1,6 +1,6 @@
 ﻿using System;
 using TechTalk.SpecFlow;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using CSharpVerbalExpressions;
 
 namespace SpecFlowUnitTests
