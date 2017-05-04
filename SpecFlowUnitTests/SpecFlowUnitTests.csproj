@@ -87,7 +87,19 @@
       <DependentUpon>ComplexTest.feature</DependentUpon>
     </Compile>
     <Compile Include="ComplexTestSteps.cs" />
+    <Compile Include="ModifierFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModifierFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierFeatureSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestDataArrayFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestDataArrayFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="TestDataArrayFeatureSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AddFeature.feature">
@@ -106,6 +118,10 @@
     <None Include="Default.srprofile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="ModifierFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ModifierFeature.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
     <None Include="SpecRunTestProfile.xsd">
@@ -113,6 +129,10 @@
     </None>
     <None Include="SpecRunTestProfile_2011_09.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="TestDataArrayFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TestDataArrayFeature.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
